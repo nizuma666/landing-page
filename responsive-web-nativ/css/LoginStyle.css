@@ -1,0 +1,168 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+#main {
+  position: relative;
+  background-color: #f6f7f8;
+}
+.container {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  padding: 35px 40px 35px 40px;
+  box-sizing: border-box;
+  background-color: #f6f7f8;
+}
+.left-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-image: url(../assets/image/bg-login.png),
+    url(../assets/image/bg-mentah.png);
+  background-repeat: no-repeat, no-repeat;
+  background-size: cover, cover;
+  width: 50%;
+  height: 100%;
+}
+.logo-top {
+  /* margin-top: 40px;
+  margin-left: 40px; */
+  height: 20%;
+  padding: 30px;
+}
+.header {
+  margin: 70px;
+  height: 80%;
+  /* margin-left: 100px;
+  margin-right: 120px; */
+}
+.header-content {
+  margin: 0;
+  /* text-align: center; */
+  font-family: "Open Sans", sans-serif;
+  color: #ffffff;
+  font-size: 44px;
+  font-weight: 700;
+  /* text-align: left; */
+}
+
+.right-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 50px;
+  width: 50%;
+  height: 100%;
+  padding-left: 90px;
+}
+.column-top-content {
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+  font-size: 32px;
+  font-weight: 600;
+  color: #1f2a36;
+}
+.column-top-subcontent {
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  color: #46505c;
+}
+.middle-box {
+  margin-bottom: 20px;
+}
+
+.middle-box label {
+  font-family: "Open Sans", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  color: #9ea0a5;
+}
+.middle-box input {
+  padding: 0;
+  background-color: #ffffff;
+  width: 100%;
+  height: 50px;
+  border-radius: 4px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #858d96;
+  border: none;
+  outline: none;
+  border-radius: 4px;
+}
+.middle-box input[placeholder] {
+  text-indent: 10px;
+}
+.bottom-box {
+  display: flex;
+  flex-direction: column;
+  /* margin-top: 40px;
+  margin-left: 60px;
+  margin-right: 60px; */
+}
+.bottom-box a {
+  margin-bottom: 20px;
+  text-align: right;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #1f2a36;
+  text-decoration: none;
+}
+.bottom-box button {
+  width: 100%;
+  height: 50px;
+  border: none;
+  /* margin-top: 30px; */
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  color: #ffffff;
+  background-color: #fbb017;
+  cursor: pointer;
+  border-radius: 4px;
+}
+.bottom-box p {
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #1f2a36;
+}
+.bottom-box p a {
+  color: #fbb017;
+}
+
+/* Aturan CSS untuk layar menengah (tablet) */
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .left-box {
+    display: none;
+  }
+  .container {
+    padding: 30px;
+  }
+  .right-box {
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/* Aturan CSS untuk layar kecil (ponsel) */
+@media screen and (max-width: 767px) {
+  .left-box {
+    display: none;
+  }
+  .container {
+    padding: 30px;
+  }
+  .right-box {
+    width: 100%;
+    padding: 0;
+  }
+}

@@ -1,0 +1,238 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  background-color: #f6f7f8;
+}
+/* .container {
+  background-color: #f6f7f8;
+  width: 100%;
+  height: auto;
+  flex-direction: column;
+} */
+.container-navbar {
+  display: flex;
+  justify-content: space-between;
+  background-color: #ffffff;
+  width: 100%;
+  height: 100px;
+  align-items: center;
+  padding: 0px 20px;
+  box-sizing: border-box;
+  position: fixed;
+}
+.right-content img {
+  margin-left: 20px;
+  width: 35px;
+  height: 35px;
+}
+.nav-item-profile {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+}
+.header {
+  display: flex;
+  align-items: center;
+  padding-top: 90px;
+  padding-left: 40px;
+  /* margin-top: 100px; */
+  background-color: #5e50a1;
+  height: 100px;
+  font-family: "Open Sans", sans-serif;
+  color: #ffffff;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.search {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  padding: 10px;
+  width: 80%;
+  height: 70px;
+  margin: 50px auto;
+  border-radius: 10px;
+  border: none;
+  box-shadow: 3px 3px 10px 5px #cdcdcd;
+}
+.search input[type="text"] {
+  height: 20px;
+  width: 70%;
+  outline: none;
+  border: none;
+  color: #9ea0a5;
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+}
+.search input[value] {
+  height: 20px;
+  width: 10%;
+  outline: none;
+  border: none;
+  color: #9ea0a5;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+}
+.nav-item-search {
+  width: 35px;
+  height: 35px;
+}
+.nav-item-line {
+  width: 35px;
+  height: 60px;
+}
+.button-search {
+  width: 115px;
+  height: 60px;
+  border: none;
+  border-radius: 5px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  color: #ffffff;
+  background-color: #5e50a1;
+  cursor: pointer;
+}
+.list-profile {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: white;
+  width: 80%;
+  height: auto;
+  margin: 0px auto;
+  border-radius: 10px;
+  padding: 20px;
+  box-sizing: border-box;
+  box-shadow: 3px 3px 10px 5px #cdcdcd;
+}
+.box-profile1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 10px;
+  padding: 10px;
+  background-color: white;
+  border-bottom: solid;
+  border-color: #f2f3f4;
+}
+.img-profile1 {
+  width: 100px;
+  height: 100px;
+}
+.data-profile1 {
+  display: flex;
+  flex-direction: column;
+  width: 75%;
+}
+.name-profile {
+  font-family: "Open Sans", sans-serif;
+  font-size: 22px;
+  font-weight: 600;
+  color: #1f2a36;
+  margin: 0;
+}
+.skill-profile {
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #9ea0a5;
+}
+.map-pin {
+  width: 16px;
+  height: 16px;
+}
+.layout-button {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+.button-skill {
+  width: 99px;
+  height: 28px;
+  border-width: 1px;
+  border-color: #fbb017;
+  border-radius: 4px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  color: #ffffff;
+  background-color: #fbb01799;
+  cursor: pointer;
+}
+.button-profile {
+  width: 148px;
+  height: 54px;
+  border: none;
+  border-radius: 5px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  color: #ffffff;
+  background-color: #5e50a1;
+  cursor: pointer;
+}
+.pagination {
+  display: flex;
+  margin: 10px auto;
+}
+
+.pagination a {
+  background-color: #ffffff;
+  padding: 8px 16px;
+  margin: 10px 3px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  color: #9ea0a5;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.pagination a.active {
+  background-color: #5e50a1;
+  color: white;
+}
+.pagination a:hover:not(.active) {
+  background-color: #ddd;
+}
+footer {
+  display: flex;
+  flex-direction: column;
+  background-color: #5e50a1;
+  padding: 5% 10% 1% 10%;
+  box-sizing: border-box;
+}
+.footer-content {
+  width: 381px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 28px;
+  color: #ffffff;
+}
+.footer-logo {
+  height: 50px;
+}
+.footer-copyright {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-top: 1px solid;
+  border-color: #f2f3f4;
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  color: #ffffff;
+}
+.footer-text2 {
+  width: 700px;
+  text-align: right;
+}
